@@ -9,12 +9,16 @@
     **Apresente apenas letras minúsculas!
     */
 
-    //ENTRADA
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
 
-    
-    //PROCESSAMENTO
+    let novaLista = []
 
-    
-    //SAÍDA
+    for (let index = 0; index < listaDeLetras.length; index++) {
+        const letra = listaDeLetras[index].toLocaleLowerCase();
+        if (novaLista.includes(letra) == false)
+            novaLista.push(letra);
+    }
+
+alert(novaLista.sort().join(","));
 
 </script>
